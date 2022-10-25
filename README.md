@@ -1,7 +1,7 @@
 # Material for the ML INFN Advanced Hackathon
 
 ML-INFN is the INFN initiative to coordinate efforts on the development and 
-deployment of Machine Learning algorithm across its research lines. 
+deployment of Machine Learning algorithms across its research lines. 
 As part of our programme, we organize training events to discuss base and advanced 
 Machine Learning topics with time to go through the code. We call them hackathons.
 
