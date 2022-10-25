@@ -1,3 +1,10 @@
+# Package-specific temporary objects
+
+advanced_jupyter/scratch/*.pkl
+advanced_jupyter/scratch/*.npz
+advanced_jupyter/scratch/*.ipynb
+#
+#
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

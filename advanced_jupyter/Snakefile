@@ -1,0 +1,46 @@
+BOUNDARIES = (0, 10, 15, 20, 25, 30, 50)
+
+rule get_data:
+  input:
+    notebook="get_data.ipynb"
+ 
+  output:
+    notebook="scratch/get_data.ipynb",
+    data=["scratch/psi_%s-%s.pkl" % b for b in zip(BOUNDARIES[:-1], BOUNDARIES[1:])]
+
+  shell:
+    "OUTPUT='{output.data}' "
+    "jupyter nbconvert --to notebook --output {output.notebook} --execute "
+    "{input.notebook}"
+
+
+rule fit:
+  input:
+    notebook="fit.ipynb",
+    data="scratch/psi_{p_low}-{p_high}.pkl"
+
+  output:
+    notebook="scratch/fit_{p_low}_{p_high}.ipynb",
+    data="scratch/fit_{p_low}-{p_high}.npz"
+    
+  shell:
+    "INPUT='{input.data}' "
+    "OUTPUT='{output.data}' "
+    "jupyter nbconvert --to notebook --output {output.notebook} --execute "
+    "{input.notebook}"
+
+
+rule collect:
+  input:
+    notebook="collect.ipynb",
+    data=["scratch/fit_%s-%s.npz" % b for b in zip(BOUNDARIES[:-1], BOUNDARIES[1:])]
+
+  output:
+    notebook="scratch/collect.ipynb"
+    
+  shell:
+    "INPUT='{input.data}' "
+    "jupyter nbconvert --to notebook --output {output.notebook} --execute "
+    "{input.notebook}"
+
+
