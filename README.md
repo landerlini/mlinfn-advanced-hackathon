@@ -24,8 +24,8 @@ included in the sub-directory.
 
 
 # License
-Code is released under OSI-approved [MIT license](./CC-BY-NC-SA).
+Code is released under OSI-approved [MIT license](./LICENSE).
 
 The documentation provided in the form of Jupyter notebooks is 
-released under [CC-BY-NC-SA](./CC-BY-NC-SA) license.
+released under [CC-BY-NC-SA](./CC-BY-NC-SA-4.0) license.
 
