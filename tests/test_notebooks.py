@@ -2,12 +2,10 @@ import os
 import nbformat
 from glob import glob
 from nbconvert.preprocessors import ExecutePreprocessor
-
-ORIG_DIR = os.getcwd()
+from working_dir import working_dir
 
 def __testdir (a_dir: str, file_pattern: str = "*.ipynb"):
-    os.chdir(a_dir)
-    try:
+    with working_dir(a_dir):
       filenames = glob(file_pattern)
       for filename in [f for f in filenames if '.TESTED.' not in f]:
           with open(filename) as f:
@@ -19,8 +17,6 @@ def __testdir (a_dir: str, file_pattern: str = "*.ipynb"):
 
           with open(filename.replace(".ipynb", ".TESTED.ipynb"), 'w') as f:
               nbformat.write(nb, f)
-    finally:
-      os.chdir(ORIG_DIR)
 
 
 def test_intro_gnn():
