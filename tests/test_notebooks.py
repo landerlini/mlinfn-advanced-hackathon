@@ -17,7 +17,7 @@ def __testdir (a_dir: str, file_pattern: str = "*.ipynb"):
 
           ep.preprocess(nb)
 
-          with open(filename.replace(".ipynb", ".TESTED.ipynb", 'w')) as f:
+          with open(filename.replace(".ipynb", ".TESTED.ipynb"), 'w') as f:
               nbformat.write(nb, f)
     finally:
       os.chdir(ORIG_DIR)
