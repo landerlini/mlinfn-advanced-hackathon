@@ -10,6 +10,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     vim tmate snakemake screen \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir /usr/bin/pip && mkdir /usr/bin/pip3 && mkdir /usr/bin/pip3.8
+
 # Install python packages
 RUN python3 -m pip install --no-cache-dir \
     graphviz==0.17 \
@@ -23,7 +25,9 @@ RUN python3 -m pip install --no-cache-dir \
     scikit-image==0.18.3 \
     scikit-learn==1.0.1 \
     seaborn==0.11.2 \
-    torch==1.10.0 \
+    torch==1.12.1 \
+    torchsummary==1.5.1 \
+    torchvision==0.13.1 \
     uproot==4.1.7 \
     optuna==3.0.3 \
     iminuit==2.17.0 
