@@ -31,5 +31,12 @@ RUN python3 -m pip install --no-cache-dir \
     uproot==4.1.7 \
     optuna==3.0.3 \
     iminuit==2.17.0 
-  
 
+
+# Install torch extensions packages
+RUN python3 -m pip install --no-cache-dir \
+    -f https://data.pyg.org/whl/torch-`python3 -c "import torch; print('torch.__version__')"`.html \
+    torch_geometric==2.1.0 \
+    torch-cluster==1.6.0 \
+    torch-sparse==0.6.15 \
+    torch-scatter==2.0.9 
