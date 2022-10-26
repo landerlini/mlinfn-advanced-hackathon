@@ -21,6 +21,16 @@ included in the sub-directory.
 #### Contents
  * `advanced_jupyter`: tricks and suggestions to get the most out of your 
     Jupyter-powered instance including remote access and pipelining multiple notebooks.
+ * `introduction_to_gnns`: a gentle introduction to Graph Neural Networks using 
+    synthetic data
+ * `ex`: material for the hackathon exercises
+   * [`unet`](./ex/unet): Lung Segmentation on Chest X-Ray images with U-Net
+   * [`domain_adaptation`](./ex/domain_adaptation): Domain Adaptation for model-independent 
+     training in High Energy Physics
+   * [`gnn_transformers`](./ex/gnn_transformers): Introduction to Graph Neural Networks
+     and Transformers with applications from High Energy Physics
+   * [`xai](./ex/xai): Introduction to Explainable Artificial Intelligence algorithms
+     with applications from Bioinformatics and Biogenetics
 
 
 # License
