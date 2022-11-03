@@ -2,6 +2,6 @@
 
 ## Data
 
-* [128*128](https://pandora.infn.it/public/99eb15)
-* [256*256](https://pandora.infn.it/public/f541c5)
-* [512*512](https://pandora.infn.it/public/7dbb7d)
+* [128*128](https://pandora.infn.it/public/f10e06)
+* [256*256](https://pandora.infn.it/public/88b1cf)
+* [512*512](https://pandora.infn.it/public/ced7f7)
