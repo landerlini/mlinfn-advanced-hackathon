@@ -4,6 +4,8 @@ advanced_jupyter/scratch/*.pkl
 advanced_jupyter/scratch/*.npz
 advanced_jupyter/scratch/*.ipynb
 *TESTED.ipynb
+*.hdf5
+*Shezen*/
 #
 #
 # Byte-compiled / optimized / DLL files
