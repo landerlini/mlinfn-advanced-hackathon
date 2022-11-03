@@ -33,6 +33,31 @@ included in the sub-directory.
      with applications from Bioinformatics and Biogenetics
 
 
+### Automated Testing
+Tests on the notebooks are run frequently on the different setups being prepared
+for the hackathon event.
+
+Run all tests with:
+```bash
+python3 -m pytest tests/test_notebooks.py -v --durations=0
+```
+
+#### Latest results
+##### CNAF - RTX 5000
+```
+712.13s call     tests/test_notebooks.py::test_DA_ML
+684.48s call     tests/test_notebooks.py::test_transformers
+192.06s call     tests/test_notebooks.py::test_unet_train_only
+139.38s call     tests/test_notebooks.py::test_intro_gnn
+24.66s call     tests/test_notebooks.py::test_DA_ML_SimpleDNN
+15.58s call     tests/test_notebooks.py::test_unet_arch
+13.04s call     tests/test_notebooks.py::test_unet_predict_only
+3.19s call     tests/test_notebooks.py::test_unet_generator
+3.12s call     tests/test_notebooks.py::test_unet_loss
+1.05s call     tests/test_notebooks.py::test_unet_intro
+```
+
+
 # License
 Code is released under OSI-approved [MIT license](./LICENSE).
 
