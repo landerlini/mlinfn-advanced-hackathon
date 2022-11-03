@@ -26,7 +26,7 @@ def test_transformers():
   return __testdir('ex/gnn_transformers', 'TransformerSG.ipynb')
 
 def test_unet_train_and_predict():
-  __testdir('ex/unet', 'Train_UNet.ipynb')
+  __testdir('ex/unet', 'Train_UNET.ipynb')
   return __testdir('ex/unet', 'Predict_UNet.ipynb')
 
 def test_unet_intro():
