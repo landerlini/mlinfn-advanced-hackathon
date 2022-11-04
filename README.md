@@ -43,7 +43,7 @@ python3 -m pytest tests/test_notebooks.py -v --durations=0
 ```
 
 #### Latest results
-##### CNAF - RTX 5000
+##### CNAF - RTX 5000 (2022-11-03)
 ```
 712.13s call     tests/test_notebooks.py::test_DA_ML
 684.48s call     tests/test_notebooks.py::test_transformers
@@ -57,6 +57,20 @@ python3 -m pytest tests/test_notebooks.py -v --durations=0
 1.05s call     tests/test_notebooks.py::test_unet_intro
 ```
 
+#### ReCaS - V100 (2022-11-04)
+```
+670.69s call     tests/test_notebooks.py::test_DA_ML
+576.31s call     tests/test_notebooks.py::test_transformers
+318.67s call     tests/test_notebooks.py::test_unet_train_only
+187.90s call     tests/test_notebooks.py::test_intro_gnn
+25.11s call     tests/test_notebooks.py::test_DA_ML_SimpleDNN
+21.07s call     tests/test_notebooks.py::test_unet_arch
+19.46s call     tests/test_advanced_jupyter.py::test_snakemake
+17.08s call     tests/test_notebooks.py::test_unet_predict_only
+4.25s call     tests/test_notebooks.py::test_unet_generator
+3.84s call     tests/test_notebooks.py::test_unet_loss
+1.33s call     tests/test_notebooks.py::test_unet_intro
+```
 
 # License
 Code is released under OSI-approved [MIT license](./LICENSE).
