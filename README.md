@@ -43,18 +43,22 @@ python3 -m pytest tests/test_notebooks.py -v --durations=0
 ```
 
 #### Latest results
-##### CNAF - RTX 5000 (2022-11-03)
+##### CNAF - RTX 5000 (2022-11-07)
 ```
-712.13s call     tests/test_notebooks.py::test_DA_ML
-684.48s call     tests/test_notebooks.py::test_transformers
-192.06s call     tests/test_notebooks.py::test_unet_train_only
-139.38s call     tests/test_notebooks.py::test_intro_gnn
-24.66s call     tests/test_notebooks.py::test_DA_ML_SimpleDNN
-15.58s call     tests/test_notebooks.py::test_unet_arch
-13.04s call     tests/test_notebooks.py::test_unet_predict_only
-3.19s call     tests/test_notebooks.py::test_unet_generator
-3.12s call     tests/test_notebooks.py::test_unet_loss
-1.05s call     tests/test_notebooks.py::test_unet_intro
+1844.80s call     tests/test_notebooks.py::test_xai                                                                                                                                                                           │·····················
+772.03s call     tests/test_notebooks.py::test_DA_ML                                                                                                                                                                          │·····················
+714.65s call     tests/test_notebooks.py::test_transformers                                                                                                                                                                   │·····················
+238.66s call     tests/test_notebooks.py::test_ex_gnn                                                                                                                                                                         │·····················
+169.10s call     tests/test_notebooks.py::test_unet_train_only                                                                                                                                                                │·····················
+141.26s call     tests/test_notebooks.py::test_intro_gnn                                                                                                                                                                      │·····················
+31.29s call     tests/test_notebooks.py::test_intro_pytorch                                                                                                                                                                   │·····················
+24.72s call     tests/test_notebooks.py::test_DA_ML_SimpleDNN                                                                                                                                                                 │·····················
+17.23s call     tests/test_advanced_jupyter.py::test_snakemake                                                                                                                                                                │·····················
+17.03s call     tests/test_notebooks.py::test_unet_arch                                                                                                                                                                       │·····················
+12.32s call     tests/test_notebooks.py::test_unet_predict_only                                                                                                                                                               │·····················
+3.46s call     tests/test_notebooks.py::test_unet_loss                                                                                                                                                                        │·····················
+3.43s call     tests/test_notebooks.py::test_unet_generator                                                                                                                                                                   │·····················
+1.17s call     tests/test_notebooks.py::test_unet_intro                                                                                                                                                                       │·····················
 ```
 
 ##### CNAF - A100 with MIG (2022-11-07)
@@ -75,19 +79,22 @@ python3 -m pytest tests/test_notebooks.py -v --durations=0
 1.00s call     tests/test_notebooks.py::test_unet_intro
 ```
 
-#### ReCaS - V100 (2022-11-04)
+#### ReCaS - V100 (2022-11-07)
 ```
-670.69s call     tests/test_notebooks.py::test_DA_ML
-576.31s call     tests/test_notebooks.py::test_transformers
-318.67s call     tests/test_notebooks.py::test_unet_train_only
-187.90s call     tests/test_notebooks.py::test_intro_gnn
+1632.26s call     tests/test_notebooks.py::test_xai
+643.56s call     tests/test_notebooks.py::test_DA_ML
+609.55s call     tests/test_notebooks.py::test_transformers
+318.69s call     tests/test_notebooks.py::test_unet_train_only
+224.93s call     tests/test_notebooks.py::test_ex_gnn
+182.76s call     tests/test_notebooks.py::test_intro_gnn
+48.19s call     tests/test_notebooks.py::test_intro_pytorch
 25.11s call     tests/test_notebooks.py::test_DA_ML_SimpleDNN
-21.07s call     tests/test_notebooks.py::test_unet_arch
-19.46s call     tests/test_advanced_jupyter.py::test_snakemake
-17.08s call     tests/test_notebooks.py::test_unet_predict_only
-4.25s call     tests/test_notebooks.py::test_unet_generator
-3.84s call     tests/test_notebooks.py::test_unet_loss
-1.33s call     tests/test_notebooks.py::test_unet_intro
+21.48s call     tests/test_advanced_jupyter.py::test_snakemake
+17.07s call     tests/test_notebooks.py::test_unet_predict_only
+3.94s call     tests/test_notebooks.py::test_unet_generator
+3.66s call     tests/test_notebooks.py::test_unet_loss
+1.52s call     tests/test_notebooks.py::test_unet_intro
+0.91s call     tests/test_notebooks.py::test_unet_arch
 ```
 
 # License
