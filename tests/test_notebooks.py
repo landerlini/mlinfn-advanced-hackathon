@@ -23,6 +23,12 @@ def __testdir (a_dir: str, file_pattern: str = "*.ipynb"):
 def test_intro_gnn():
   return __testdir('introduction_to_gnns')
 
+def test_intro_pytorch():
+  return __testdir('introduction_to_pytorch', 'PyTorch_SimpleMLP_Example.ipynb')
+
+def test_ex_gnn():
+  return __testdir('ex/gnn_transformers/GNN_IN_JetTagger', 'GNN_Jet_Tagging_IN.ipynb')
+
 def test_transformers():
   return __testdir('ex/gnn_transformers', 'TransformerSG.ipynb')
 
@@ -50,3 +56,6 @@ def test_DA_ML():
 
 def test_DA_ML_SimpleDNN():
   return __testdir('ex/domain_adaptation', 'Excercise_DA_MLhackathon_SimpleDNN.ipynb')
+
+def test_xai():
+  return __testdir('ex/xai', 'XAI.ipynb')
