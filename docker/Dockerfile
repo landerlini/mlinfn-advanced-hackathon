@@ -25,9 +25,9 @@ RUN python3 -m pip install --no-cache-dir \
     scikit-image==0.18.3 \
     scikit-learn==1.0.1 \
     seaborn==0.11.2 \
-    torch==1.12.1 \
+    torch==1.11.0+cu113 \
     torchsummary==1.5.1 \
-    torchvision==0.13.1 \
+    torchvision==0.12.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html \
     uproot==4.1.7 \
     optuna==3.0.3 \
     iminuit==2.17.0 
