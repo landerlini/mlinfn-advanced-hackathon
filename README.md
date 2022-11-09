@@ -79,6 +79,24 @@ python3 -m pytest tests/test_notebooks.py -v --durations=0
 1.00s call     tests/test_notebooks.py::test_unet_intro
 ```
 
+#### CNAF - CPU only (2022-11-08)
+```
+14519.75s call     tests/test_notebooks.py::test_transformers
+11855.75s call     tests/test_notebooks.py::test_xai
+3579.68s call     tests/test_notebooks.py::test_DA_ML
+771.67s call     tests/test_notebooks.py::test_ex_gnn
+696.70s call     tests/test_notebooks.py::test_unet_train_only
+143.61s call     tests/test_notebooks.py::test_intro_gnn
+44.79s call     tests/test_notebooks.py::test_DA_ML_SimpleDNN
+19.27s call     tests/test_advanced_jupyter.py::test_snakemake
+12.89s call     tests/test_notebooks.py::test_unet_arch
+9.78s call     tests/test_notebooks.py::test_unet_predict_only
+6.37s call     tests/test_notebooks.py::test_intro_pytorch
+4.44s call     tests/test_notebooks.py::test_unet_generator
+3.92s call     tests/test_notebooks.py::test_unet_loss
+1.07s call     tests/test_notebooks.py::test_unet_intro
+```
+
 #### ReCaS - V100 (2022-11-07)
 ```
 1632.26s call     tests/test_notebooks.py::test_xai
