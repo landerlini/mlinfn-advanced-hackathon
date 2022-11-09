@@ -2,7 +2,9 @@
 
 Chest X-Ray (CXR) imaging is a radiographic procedure that produces 2D images of the chest. When we want to analyze the lungs on this kind of images it is important to delete the unuseful information that may be contained in the image. A typical CXR looks like this:
 
-<center><img src="images/P_3_190_org.png" alt="fishy" class="bg-primary mb-1" width="500px"></center>
+<p align="center">
+  <img src="images/P_3_190_org.png" alt="fishy" class="bg-primary mb-1" width="500px">
+</p>
 
 It is clear that there are many pixels that do not belong to lungs. So it is important to segment the lungs. In this exercise you will learn how to build, train and test a U-Net for lung segmentation. The network we are going to implement can be easly adapted to any other segmentation problem. So, let's see together what a U-Net is.
 U-net (cita ronnerberger) is a Fully Convolutional Neural Network (FCNN) and it is the state-of-the-art algorithm for medical segmentation. The term FCNN means that there are not dense layers (Multi-Layer Perceptron) at the end of the Network. Just to let you understand the difference:
