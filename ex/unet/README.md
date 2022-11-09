@@ -11,12 +11,16 @@ U-net (cita ronnerberger) is a Fully Convolutional Neural Network (FCNN) and it 
 
 - Suppose we have a standard Convolutional Neural Network for binary classification of images. We expect that the newtork architecture is made by several Convolutional, Pooling or Strided Convolutional layers, activation layers and so on. At a certain point of the architecture, we flatten the input by using a simple flattening or a Global Average Pooling for example. Once we reduced the size of the tensor to one dimension, we use dense layer to let our CNN classify the input images:
 
-<center><img src="./images/cnnfull2sfondo.gif" alt="" class="bg-primary mb-1" width="700px"></center>
+<p align="center">
+  <img src="./images/cnnfull2sfondo.gif" alt="" class="bg-primary mb-1" width="700px">
+</p>
 
 
 - In a Fully Convolutional Neural Network (FCNN), we perform a pixel-wise classification: image segmentation means to give to each pixel a class (in our case lung or background). The structure of the U-Net mirrors the structure of an autoencoder: the left part, also called compression path, is an encoder that compress the information with a CNN and the right part, called decompression path, is a decoder that upsample the encoded information in order to return an image with the same size of the input one. However, there are important differences between autoencoder and U-Nets. What are the differences?
 
-<center><img src="./images/unet_lung.png" alt="" class="bg-primary mb-1" width="700px"></center>
+<p align="center">
+  <img src="./images/unet_lung.png" alt="" class="bg-primary mb-1" width="700px">
+</p>
 
 In this exercise, you will learn to build, train and evaluate a CNN for lung segmentation on Chest X-Ray images. Moreover, you will be introduced to a possible structure of a such complex network. In fact, we won't use a single jupyter notebook to develop the code but we will see many parts of the training framework.
 
