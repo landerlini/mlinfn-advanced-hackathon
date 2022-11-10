@@ -40,3 +40,7 @@ RUN python3 -m pip install --no-cache-dir \
     torch-cluster==1.6.0 \
     torch-sparse==0.6.15 \
     torch-scatter==2.0.9 
+
+# Install libraries for the fpga hands-on
+RUN BONDMACHINE_DIR=/usr/bin bash <(curl -fsSL http://bondmachine.fisica.unipg.it/installer/install)
+
