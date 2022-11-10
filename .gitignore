@@ -1,5 +1,6 @@
 # Package-specific temporary objects
 
+*.swp
 advanced_jupyter/scratch/*.pkl
 advanced_jupyter/scratch/*.npz
 advanced_jupyter/scratch/*.ipynb
