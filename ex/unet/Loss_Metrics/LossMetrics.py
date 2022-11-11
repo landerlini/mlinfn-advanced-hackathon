@@ -75,7 +75,7 @@ def DSC(y_true, y_pred): ## Dice coefficient computed only on the foreground to 
     acc=(intersection+0.0001)/(union+0.0001) # the correction is needed to not let the algorithm loss going to inf.
     return acc
 
-def border_dice(true,pred,mm_tolerance = 10, spacing_mm=[1.,1.]):
+def border_dice(true,pred,mm_tolerance = 2, spacing_mm=[1.,1.]):
     true = np.round(true)
     pred = np.round(pred) 
 
