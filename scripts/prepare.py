@@ -77,11 +77,11 @@ parser.add_argument(
 
 args = parser.parse_args()
 
-protected_users = [
-  'afania', 
-  'giorgia-20miniello',
-  'spiga'
-]
+protected_users = []
+#  'afania', 
+#  'giorgia-20miniello',
+#  'spiga'
+#]
 
 user_list = []
 for machine in open('machines.dat').read().split('\n'):
