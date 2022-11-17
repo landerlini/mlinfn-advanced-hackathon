@@ -2,6 +2,8 @@
 
 args=`echo $@`  # Transform new lines in spaces
 users=`python3 -c "print (' '.join([w for w in '$args'.split(' ') if w != '' and w[0] != '-']))"`
+
+## Flags
 cleanup=`python3 -c "print ('yes' if '--cleanup' in '$args'.split(' ') else 'no')"`
 cleanup_da=`python3 -c "print ('yes' if '--cleanup-da' in '$args'.split(' ') else 'no')"`
 cleanup_unet=`python3 -c "print ('yes' if '--cleanup-unet' in '$args'.split(' ') else 'no')"`
@@ -26,6 +28,21 @@ if [ $solutions_da = 'no' ];
     rm $LOCAL/ex/domain_adaptation/Excercise_DA_MLhackathon_SimpleDNN.ipynb
   fi;
   
+if [ $solutions_xai = 'no' ];
+  then
+    rm $LOCAL/ex/xai/XAI-version2.ipynb
+  fi;
+
+if [ $solutions_gnn = 'no' ];
+  then
+    rm $LOCAL/ex/gnn_transformers/TransformerSG_solution.ipynb
+    rm $LOCAL/ex/gnn_transformers/GNN_IN_JetTagger/GNN_Jet_Tagging_IN.ipynb
+  fi;
+
+if [ $solutions_unet = 'no' ];
+  then
+    rm -rf $LOCAL/ex/unet/ex_solution
+  fi;
 
 
 for user in $users;

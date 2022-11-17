@@ -61,4 +61,6 @@ def test_DA_ML_SimpleDNN():
   return __testdir('ex/domain_adaptation', 'Excercise_DA_MLhackathon_SimpleDNN.ipynb')
 
 def test_xai():
-  return __testdir('ex/xai', 'XAI.ipynb')
+  return __testdir('ex/xai', 'XAI-version2.ipynb')
+
+
