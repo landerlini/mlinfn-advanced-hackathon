@@ -72,6 +72,7 @@ for user in $users;
     rsync --ignore-existing -r $LOCAL/advanced_jupyter/*         $PRIVATE/Jupyter-Anderlini/
     rsync --ignore-existing -r $LOCAL/introduction_to_pytorch/*  $PRIVATE/Pytorch-Giagu/
     rsync --ignore-existing -r $LOCAL/introduction_to_gnns/*     $PRIVATE/GNN-Rizzi/
+    rsync --ignore-existing -r $LOCAL/bayesian_optimization/*     $PRIVATE/SMBO-Barbetti/
 
     ## Shared
     mkdir -p $SHARED/Tuesday
