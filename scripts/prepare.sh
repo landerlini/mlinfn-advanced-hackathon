@@ -73,6 +73,7 @@ for user in $users;
     rsync --ignore-existing -r $LOCAL/introduction_to_pytorch/*  $PRIVATE/Pytorch-Giagu/
     rsync --ignore-existing -r $LOCAL/introduction_to_gnns/*     $PRIVATE/GNN-Rizzi/
     rsync --ignore-existing -r $LOCAL/introduction_to_tensorflow/*     $PRIVATE/Pytorch-Taliercio/
+    rsync --ignore-existing -r $LOCAL/introduction_xai/*         $PRIVATE/XAI-Fania
 
     ## Shared
     mkdir -p $SHARED/Tuesday
