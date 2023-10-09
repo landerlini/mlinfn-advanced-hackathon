@@ -1,1 +1,0 @@
-First version of the GNN IN exercise. Work in progress.
