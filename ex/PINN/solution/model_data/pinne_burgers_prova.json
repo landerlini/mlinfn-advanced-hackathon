@@ -1,0 +1,17 @@
+{
+    "n_inputs": 2,
+    "n_outputs": 1,
+    "hidden_dims": [
+        64,
+        64,
+        64,
+        64,
+        64
+    ],
+    "dropout": 0.2,
+    "activation_func": "GELU(approximate='none')",
+    "train_size": 8192000,
+    "epochs": 1000,
+    "patience": 200,
+    "lr_patience": 50
+}
