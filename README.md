@@ -45,19 +45,14 @@ python3 -m pytest tests/test_notebooks.py -v --durations=0
 
 #### Latest results
 
-##### CNAF - RTX 5000 (2024-11-15)
+##### CNAF - T4 (2024-11-dd)
 ```
-267.22s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni]
-159.61s call     tests/test_notebooks.py::test_ex_quantum_ml[qml]
-102.08s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
-61.11s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
-55.07s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
-11.75s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
-11.60s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
-11.54s call     tests/test_notebooks.py::test_env_quantum[qml]
-11.51s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
-10.77s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
-10.76s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
+TBA
+```
+
+##### CNAF - RTX 5000 (2024-11-dd)
+```
+TBA
 ```
 
 ##### CNAF - A100 with MIG (2024-11-dd)
@@ -67,7 +62,20 @@ TBA
 
 #### ReCaS - A100 with MIG (2024-11-dd)
 ```
-TBA
+91.00s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
+74.52s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
+73.66s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
+64.91s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
+49.67s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
+46.21s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
+31.12s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
+12.92s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
+7.54s call     tests/test_notebooks.py::test_env_quantum[qml]
+6.58s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
+6.50s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
+6.47s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
+6.22s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
+5.91s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
 ```
 
 # License

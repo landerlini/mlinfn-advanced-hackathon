@@ -23,24 +23,27 @@ def __testdir(a_dir: str, file_pattern: str = "*.ipynb", kernel_name: str = "pyt
 
 @pytest.mark.parametrize("kn", ["cnn-k2", "cnn-k3", "gan-k2", "gan-k3", "ai4ni"])
 def test_env_tensorflow(kn):
-    return __testdir("ex/tests", "tensorflow_env.ipynb", kernel_name=kn)
+    __testdir("ex/tests", "tensorflow_env.ipynb", kernel_name=kn)
 
 @pytest.mark.parametrize("kn", ["qml"])
 def test_env_quantum(kn):
-    return __testdir("ex/tests", "quantum_env.ipynb", kernel_name=kn)
+    __testdir("ex/tests", "quantum_env.ipynb", kernel_name=kn)
 
 @pytest.mark.parametrize("kn", ["cnn-k2", "cnn-k3"])
 def test_ex_lhcf_cnn(kn):
-    return __testdir("ex/tests/lhcf-cnn", kernel_name=kn)
+    __testdir("ex/tests/lhcf-cnn", "train_and_split.ipynb", kernel_name=kn)
+    __testdir("ex/tests/lhcf-cnn", "Network.ipynb", kernel_name=kn)
 
 @pytest.mark.parametrize("kn", ["gan-k2"])
 def test_ex_gan_detector(kn):
-    return __testdir("ex/tests/gan-detector", kernel_name=kn)
+    __testdir("ex/tests/gan-detector", "Gauss_smearing_GAN.ipynb", kernel_name=kn)
 
+@pytest.mark.parametrize("nb", ["sMRI_fMRI_sep", "Joint_Fusion"])
 @pytest.mark.parametrize("kn", ["ai4ni"])
-def test_ex_asd_diagnosis(kn):
-    return __testdir("ex/tests/asd-diagnosis", kernel_name=kn)
+def test_ex_asd_diagnosis(nb, kn):
+    __testdir("ex/tests/asd-diagnosis", f"{nb}.ipynb", kernel_name=kn)
 
+@pytest.mark.parametrize("nb", ["QClassifier_*", "QAE_*", "QUBO_*"])
 @pytest.mark.parametrize("kn", ["qml"])
-def test_ex_quantum_ml(kn):
-    return __testdir("ex/tests/quantum-ml", kernel_name=kn)
+def test_ex_quantum_ml(nb, kn):
+    __testdir("ex/tests/quantum-ml", nb, kernel_name=kn)
