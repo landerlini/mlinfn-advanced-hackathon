@@ -34,7 +34,7 @@ included in the sub-directory.
   * [`quantum-ml`](./ex/quantum-ml): Quantum Machine Learning applications: 
   classification, anomaly detection and QUBO problems
 
-### Automated Testing
+### Automated testing
 Tests on the notebooks are run frequently on the different setups being prepared
 for the hackathon event.
 
@@ -60,25 +60,25 @@ TBA
 TBA
 ```
 
-#### ReCaS - A100 with MIG (2024-11-16)
+##### ReCaS - A100 with MIG (2024-11-16)
 ```
-91.00s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
-74.52s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
-73.66s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
-64.91s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
-49.67s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
-46.21s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
-31.12s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
-12.92s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
-7.54s call     tests/test_notebooks.py::test_env_quantum[qml]
-6.58s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
-6.50s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
-6.47s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
-6.22s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
-5.91s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
+90.53s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
+74.62s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
+72.61s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
+64.08s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
+57.02s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
+56.07s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
+30.02s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
+13.12s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
+9.03s call     tests/test_notebooks.py::test_env_quantum[qml]
+6.72s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
+6.59s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
+6.02s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
+5.96s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
+5.76s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
 ```
 
-# License
+### License
 Code is released under OSI-approved [MIT license](./LICENSE).
 
 The documentation provided in the form of Jupyter notebooks is 
