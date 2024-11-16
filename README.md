@@ -60,7 +60,7 @@ TBA
 TBA
 ```
 
-#### ReCaS - A100 with MIG (2024-11-dd)
+#### ReCaS - A100 with MIG (2024-11-16)
 ```
 91.00s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
 74.52s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
