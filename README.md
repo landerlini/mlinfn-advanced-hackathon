@@ -17,12 +17,12 @@ The [third](https://agenda.infn.it/event/32568) and
 advanced users, as well as this [first](https://agenda.infn.it/event/43129) 
 AI-INFN hackathon and the related materials are collected in this repository.
 
-### Structure of the repository
+## Structure of the repository
 Contents is organized per topic in different folders. 
 When documentation beyond the Jupyter notebook is needed, a README.md file is 
 included in the sub-directory.
 
-#### Contents
+### Contents
 * `ex`: material for the hackathon exercises
   * [`lhcf-cnn`](./ex/lhcf-cnn): Use of a multidimensional CNN for particle 
   identification in the LHCf experiment
@@ -34,7 +34,7 @@ included in the sub-directory.
   * [`quantum-ml`](./ex/quantum-ml): Quantum Machine Learning applications: 
   classification, anomaly detection and QUBO problems
 
-### Automated testing
+## Automated testing
 Tests on the notebooks are run frequently on the different setups being prepared
 for the hackathon event.
 
@@ -43,24 +43,63 @@ Run all tests with:
 python3 -m pytest tests/test_notebooks.py -v --durations=0
 ```
 
-#### Latest results
+### Latest results
 
-##### CNAF - T4 (2024-11-dd)
+#### CNAF - T4 (2024-11-17)
 ```
-TBA
+150.11s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
+138.11s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
+97.79s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
+92.61s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
+69.07s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
+64.78s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
+38.49s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
+17.60s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
+12.03s call     tests/test_notebooks.py::test_env_quantum[qml]
+11.76s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
+11.35s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
+11.21s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
+10.95s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
+10.89s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
 ```
 
-##### CNAF - RTX 5000 (2024-11-dd)
+#### CNAF - RTX 5000 (2024-11-17)
 ```
-TBA
+124.10s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
+123.11s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
+104.98s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
+95.78s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
+65.30s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
+64.12s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
+35.72s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
+17.38s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
+12.03s call     tests/test_notebooks.py::test_env_quantum[qml]
+11.54s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
+11.31s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
+10.66s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
+10.65s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
+10.58s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
 ```
 
-##### CNAF - A100 with MIG (2024-11-dd)
+#### CNAF - A100 with MIG (2024-11-16)
 ```
-TBA
+78.06s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
+77.46s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
+76.11s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
+74.41s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
+59.66s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
+51.67s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
+27.22s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
+16.02s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
+10.36s call     tests/test_notebooks.py::test_env_quantum[qml]
+10.26s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
+9.90s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
+9.89s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
+9.67s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
+9.56s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
 ```
 
-##### ReCaS - A100 with MIG (2024-11-16)
+#### ReCaS - A100 with MIG (2024-11-16)
 ```
 90.53s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
 74.62s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
@@ -78,9 +117,8 @@ TBA
 5.76s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
 ```
 
-### License
+## License
 Code is released under OSI-approved [MIT license](./LICENSE).
 
 The documentation provided in the form of Jupyter notebooks is 
 released under [CC-BY-NC-SA](./CC-BY-NC-SA-4.0) license.
-
