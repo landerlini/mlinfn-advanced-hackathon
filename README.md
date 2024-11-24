@@ -63,22 +63,22 @@ python3 -m pytest tests/test_notebooks.py -v --durations=0
 7.56s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
 ```
 
-#### ReCaS - A100 with MIG (2024-11-16)
+#### ReCaS - A100 with MIG (2024-11-24)
 ```
-90.53s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
-74.62s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
-72.61s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
-64.08s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
-57.02s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
-56.07s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
-30.02s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
-13.12s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
-9.03s call     tests/test_notebooks.py::test_env_quantum[qml]
-6.72s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
-6.59s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
-6.02s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
-5.96s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
-5.76s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
+86.77s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
+80.08s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
+72.02s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
+64.25s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
+56.46s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
+50.56s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
+29.88s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
+12.94s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
+7.60s call     tests/test_notebooks.py::test_env_quantum[qml]
+6.37s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
+6.34s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
+6.27s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
+6.11s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
+5.99s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
 ```
 
 ## License
