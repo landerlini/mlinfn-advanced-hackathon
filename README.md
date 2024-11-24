@@ -45,58 +45,22 @@ python3 -m pytest tests/test_notebooks.py -v --durations=0
 
 ### Latest results
 
-#### CNAF - T4 (2024-11-17)
+#### CNAF - A100 with MIG (2024-11-24)
 ```
-150.11s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
-138.11s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
-97.79s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
-92.61s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
-69.07s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
-64.78s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
-38.49s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
-17.60s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
-12.03s call     tests/test_notebooks.py::test_env_quantum[qml]
-11.76s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
-11.35s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
-11.21s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
-10.95s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
-10.89s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
-```
-
-#### CNAF - RTX 5000 (2024-11-17)
-```
-124.10s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
-123.11s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
-104.98s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
-95.78s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
-65.30s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
-64.12s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
-35.72s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
-17.38s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
-12.03s call     tests/test_notebooks.py::test_env_quantum[qml]
-11.54s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
-11.31s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
-10.66s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
-10.65s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
-10.58s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
-```
-
-#### CNAF - A100 with MIG (2024-11-16)
-```
-78.06s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
-77.46s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
-76.11s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
-74.41s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
-59.66s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
-51.67s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
-27.22s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
-16.02s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
-10.36s call     tests/test_notebooks.py::test_env_quantum[qml]
-10.26s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
-9.90s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
-9.89s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
-9.67s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
-9.56s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
+85.10s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
+78.64s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
+74.39s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
+74.38s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
+59.21s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
+48.38s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
+28.07s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
+12.98s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
+10.03s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
+10.03s call     tests/test_notebooks.py::test_env_quantum[qml]
+9.00s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
+8.53s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
+7.67s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
+7.56s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
 ```
 
 #### ReCaS - A100 with MIG (2024-11-16)
