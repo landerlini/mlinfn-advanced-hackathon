@@ -1,4 +1,4 @@
-# Material for the AI-INFN Advanced Hackathon
+# Material for the AI-INFN Advanced Hackathon (Pavia version)
 
 AI-INFN, as evolution of the ML-INFN initiative, collects and coordinate the efforts 
 on the development and deployment of Artificial Intelligence technologies relevant 
@@ -15,7 +15,11 @@ Machine Learning beginners. The material used for those events is available in
 The [third](https://agenda.infn.it/event/32568) and 
 [fifth](https://agenda.infn.it/event/37650) ML-INFN hackathons were targeting 
 advanced users, as well as this [first](https://agenda.infn.it/event/43129) 
+
 AI-INFN hackathon and the related materials are collected in this repository.
+The [first](https://agenda.infn.it/event/43129/) hackathon was held in Padua
+in 2024, while the [second](https://agenda.infn.it/event/47736/), is hosted 
+in Pavia in 2025.
 
 ## Structure of the repository
 Contents is organized per topic in different folders. 
@@ -24,15 +28,7 @@ included in the sub-directory.
 
 ### Contents
 * `ex`: material for the hackathon exercises
-  * [`lhcf-cnn`](./ex/lhcf-cnn): Use of a multidimensional CNN for particle 
-  identification in the LHCf experiment
-  * [`gan-detector`](./ex/gan-detector): Generative Adversarial Networks as 
-  a tool to unfold detector effects
-  * [`asd-diagnosis`](./ex/asd-diagnosis): Autism Spectrum Disorders (ASD) 
-  diagnosis using structural and functional Magnetic Resonance Imaging and 
-  Radiomics
-  * [`quantum-ml`](./ex/quantum-ml): Quantum Machine Learning applications: 
-  classification, anomaly detection and QUBO problems
+* `test`: automated testing infrastructure
 
 ## Automated testing
 Tests on the notebooks are run frequently on the different setups being prepared
@@ -41,44 +37,6 @@ for the hackathon event.
 Run all tests with:
 ```bash
 python3 -m pytest tests/test_notebooks.py -v --durations=0
-```
-
-### Latest results
-
-#### CNAF - A100 with MIG (2024-11-24)
-```
-85.10s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
-78.64s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
-74.39s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
-74.38s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
-59.21s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
-48.38s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
-28.07s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
-12.98s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
-10.03s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
-10.03s call     tests/test_notebooks.py::test_env_quantum[qml]
-9.00s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
-8.53s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
-7.67s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
-7.56s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
-```
-
-#### ReCaS - A100 with MIG (2024-11-24)
-```
-86.77s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QClassifier_*]
-80.08s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-Joint_Fusion]
-72.02s call     tests/test_notebooks.py::test_ex_asd_diagnosis[ai4ni-sMRI_fMRI_sep]
-64.25s call     tests/test_notebooks.py::test_ex_gan_detector[gan-k2]
-56.46s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k3]
-50.56s call     tests/test_notebooks.py::test_ex_lhcf_cnn[cnn-k2]
-29.88s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QAE_*]
-12.94s call     tests/test_notebooks.py::test_ex_quantum_ml[qml-QUBO_*]
-7.60s call     tests/test_notebooks.py::test_env_quantum[qml]
-6.37s call     tests/test_notebooks.py::test_env_tensorflow[gan-k3]
-6.34s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k2]
-6.27s call     tests/test_notebooks.py::test_env_tensorflow[cnn-k3]
-6.11s call     tests/test_notebooks.py::test_env_tensorflow[ai4ni]
-5.99s call     tests/test_notebooks.py::test_env_tensorflow[gan-k2]
 ```
 
 ## License
