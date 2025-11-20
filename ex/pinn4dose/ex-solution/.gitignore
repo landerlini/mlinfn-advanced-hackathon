@@ -1,0 +1,10 @@
+*/logs/
+logs/
+training_PINN/
+logs_inverse/
+training_PINN_inverse/
+__pycache__/
+*/__pycache__/
+*/__pycache__/*
+logs_2d_inverse/
+training_PINN_inverse_2D/
