@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import matplotlib.gridspec as gridspec
-import corner as corner
 from scipy import interpolate
 from scipy import stats
 from scipy.integrate import trapezoid
@@ -33,55 +32,6 @@ def plot_1dhistos(data, features, bins=100):
     plt.tight_layout()
     plt.show()
     return
-
-def plot_corner(data, features):
-    """
-    Plot corner plot of the data
-    """
-    fig = corner.corner(data, labels=features, color="tab:blue",
-        levels=[0.5, 0.9, 0.99],
-        hist_bin_factor=3,
-        scale_hist=True,
-        plot_datapoints=False,
-        hist_kwargs={"ls": "--"},
-        contour_kwargs={"linestyles": "--"},
-        label_kwargs={"fontsize": 16},)
-    plt.show()
-    return
-
-def make_corner(reco, samples, labels, title, ranges=[[-0.2, 1], [15, 300], [-0.2, 6.4], [-4, 4], [0,60], [-0.2, 1]], *args, **kwargs):
-    blue_line = mlines.Line2D([], [], color="tab:blue", label="Target")
-    red_line = mlines.Line2D([], [], color="tab:orange", label="Model")
-    fig = corner.corner(
-        reco,
-        range=ranges,
-        labels=labels,
-        color="tab:blue",
-        levels=[0.5, 0.9, 0.99],
-        hist_bin_factor=3,
-        scale_hist=True,
-        plot_datapoints=False,
-        hist_kwargs={"ls": "--"},
-        contour_kwargs={"linestyles": "--"},
-        label_kwargs={"fontsize": 16},
-        *args,
-        **kwargs
-    )
-    corner.corner(
-        samples,
-        range=ranges,
-        fig=fig,
-        color="tab:orange",
-        levels=[0.5, 0.9, 0.99],
-        hist_bin_factor=3,
-        scale_hist=True,
-        plot_datapoints=False,
-        label_kwargs={"fontsize": 16},
-        *args,
-        **kwargs
-    )
-    plt.suptitle(title, fontsize=20)
-    return fig
 
 def areas_between_rocs(tpr_real, fpr_real, tpr_flash, fpr_flash, x_lim=0.2):
     if x_lim:
