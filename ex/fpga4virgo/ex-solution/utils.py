@@ -27,15 +27,15 @@ def load_data(input_dir, nfiles=100, target_shape=64, normalize=True):
     if target_shape > 256:
         raise ValueError("The target shape is too large! Please choose a smaller value!")
     if target_shape == 256:
-        NSPLITS=2048
+        NSPLITS=512
     elif target_shape == 128:
-        NSPLITS=2048
+        NSPLITS=1024
     elif target_shape == 64:
         NSPLITS=2048
     elif target_shape == 32:
-        NSPLITS=2048
+        NSPLITS=4096
     elif target_shape == 16:
-        NSPLITS=2048
+        NSPLITS=8192
     else:
         raise ValueError("The target shape is too small! Please choose a larger value!")
     
