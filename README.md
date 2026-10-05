@@ -18,8 +18,9 @@ advanced users, as well as this [first](https://agenda.infn.it/event/43129)
 
 AI-INFN hackathon and the related materials are collected in this repository.
 The [first](https://agenda.infn.it/event/43129/) hackathon was held in Padua
-in 2024, while the [second](https://agenda.infn.it/event/47736/), is hosted 
-in Pavia in 2025.
+in 2024, while the [second](https://agenda.infn.it/event/47736/), was hosted 
+in Pavia in 2025. The [third](https://agenda.infn.it/event/53025/) hackathon, 
+in 2026, is hosted in Ferrara.
 
 ## Structure of the repository
 Contents is organized per topic in different folders. 
