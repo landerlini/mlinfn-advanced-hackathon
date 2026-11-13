@@ -1,4 +1,4 @@
-# Assessing the Added Value of Transformers and Graph Neural Networks for Neuroimaging Analysis: Performance, Explainability, and Computational Cost
+# The Added Value of Transformers and Graph Neural Networks for Neuroimaging Analysis
 
 Autism spectrum disorder (ASD) is a heterogeneous neurodevelopmental condition characterized by differences in social communication and interaction, as well as restricted and repetitive patterns of behavior and interests. Neuroimaging studies have identified alterations in both brain morphology and functional connectivity, suggesting that the integration of structural and functional magnetic resonance imaging (MRI) may provide complementary information for ASD classification. The availability of large-scale public datasets, such as the Autism Brain Imaging Data Exchange (ABIDE I and II) [1,2], has facilitated the development and evaluation of machine learning approaches for investigating these differences. Previous studies have demonstrated the potential of multimodal deep learning to combine anatomical and functional information and improve the discrimination of individuals with ASD from typically developing (TD) controls [3].
 
@@ -100,9 +100,16 @@ First, you will run the JointFusion model notebook, it is a PyTorch reimplementa
 
 Each difficulty level includes the tasks of the lower ones. $\checkmark$ = you complete it, $\times$ = already filled in.
 
-| Task | Easy | Medium | Hard |
-| --- | --- | --- | --- |
-| | | | |
+| Task | Easy | Medium |
+| --- | --- | --- |
+| Build the outer stratified 10-fold split | $\checkmark$ | $\checkmark$ |
+| Draw the stratified early-stopping subjects from the training set | $\checkmark$ | $\checkmark$ |
+| Define the search space of the optimizer: `lr`, `momentum`, `batch_size`, `l1_lambda` | $\checkmark$ | $\checkmark$ |
+| Define the search space of the architecture: widths and dropout rates | $\times$ | $\checkmark$ |
+| Write the Optuna objective | $\times$ | $\checkmark$ |
+| Create the Optuna study with sampler and pruner | $\times$ | $\checkmark$ |
+| Run the optimization and save the best parameters | $\checkmark$ | $\checkmark$ |
+| Train and evaluate the joint model with the tuned hyperparameters | $\times$ | $\checkmark$ |
 
 ## JointFusion++ notebook
 
