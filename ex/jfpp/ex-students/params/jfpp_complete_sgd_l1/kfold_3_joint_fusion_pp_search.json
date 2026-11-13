@@ -1,0 +1,23 @@
+{
+ "best_inner_auc": 0.6988972524238762,
+ "trials": 102,
+ "minutes": 66.28978558333333,
+ "hpo_s": 3977.387135,
+ "pair_order": "column-major",
+ "graph": "complete",
+ "run": "jfpp_complete_sgd_l1",
+ "knn_k": null,
+ "k_grid": null,
+ "budget": {
+  "n_trials": 100,
+  "epoch_cap": 50,
+  "patience": 6
+ },
+ "oom_pruned_trials": 0,
+ "fixed": {
+  "gat_heads": 8,
+  "morph_heads": 2,
+  "morph_depth": 1
+ },
+ "quick": false
+}

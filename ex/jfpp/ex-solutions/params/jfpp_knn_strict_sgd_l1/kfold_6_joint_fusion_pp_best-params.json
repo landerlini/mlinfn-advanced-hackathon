@@ -1,0 +1,15 @@
+{
+ "gat_hidden": 128,
+ "gat_out": 32,
+ "gat_dropout": 0.26983754110053515,
+ "morph_d": 32,
+ "morph_out": 8,
+ "morph_dropout": 0.21904879316655965,
+ "fusion_hidden": 16,
+ "fusion_dropout": 0.32341520680288516,
+ "knn_k": 1,
+ "lr": 0.04201463216933851,
+ "momentum": 0.764330030301595,
+ "l1_lambda": 0.00035148715271359935,
+ "batch_size": 16
+}

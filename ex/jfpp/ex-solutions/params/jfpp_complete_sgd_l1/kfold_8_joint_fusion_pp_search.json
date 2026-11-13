@@ -1,0 +1,24 @@
+{
+ "best_inner_auc": 0.707686708174581,
+ "trials": 100,
+ "minutes": 50.07671994999999,
+ "hpo_s": 3004.6031969999995,
+ "pair_order": "column-major",
+ "graph": "complete",
+ "run": "jfpp_complete_sgd_l1",
+ "knn_k": null,
+ "k_grid": null,
+ "budget": {
+  "n_trials": 100,
+  "epoch_cap": 50,
+  "patience": 6
+ },
+ "oom_pruned_trials": 0,
+ "fixed": {
+  "gat_heads": 8,
+  "morph_heads": 2,
+  "morph_depth": 1
+ },
+ "optimizer": "SGD + momentum + L1 (l1_lambda and batch size searched, no weight decay)",
+ "quick": false
+}
